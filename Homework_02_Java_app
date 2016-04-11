@@ -1,0 +1,68 @@
+package com.company;
+
+import java.text.MessageFormat;
+import java.util.Calendar;
+import java.util.Scanner;
+
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        // Problem 7 - Print on console
+        String name = "Pesho";
+        int age = 28;
+        double height = 1.84;
+
+        System.out.println("My name is " + name);
+
+        // Problem 8 - Sum two variables and print on console
+        int x = 1736436;
+        int y = 48923416;
+
+        int result = x + y;
+        System.out.println("The result is " + result);
+
+        // Problem 9 - More complex tasks
+        // Problem 9.1 - Print on the console the current date
+        java.util.Date date = new java.util.Date();
+        System.out.println("Current Time/Day is: " + date);
+
+        // Problem 9.2 - Print on the console the date after 20 hours
+        Calendar cal = Calendar.getInstance();
+        cal.setTime(date);
+        cal.add(Calendar.HOUR_OF_DAY, 20);
+        date = cal.getTime();
+        System.out.println("After 20 Hours Time/Day will be: " + date);
+
+        // Problem 9.3 - Print on the console the product of two “double” variables declared by you
+        double varOne = 6.4;
+        double varTwo = 4.7;
+        System.out.println(MessageFormat.format("The product of {0} and {1} is {2}", varOne, varTwo, varOne * varTwo));
+
+        // Problem 9.4 - Read from the console an user input which should be numeric. Sum it with 10 and print on the console the sum.
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Please enter the value : ");
+        double i = Double.parseDouble(scan.nextLine());
+
+        System.out.println("Your number is  : " + i);
+        System.out.println();
+
+
+        // Problem 9.5 - Read from the console two numbers. Print on the console their product (e.g. Read “4” and “20”, Print “80”)
+        Scanner in = new Scanner(System.in);
+        int input = in.nextInt();
+        System.out.println("Sum is " + (input + 10));
+        int firstNumber = in.nextInt();
+        int secondNumber = in.nextInt();
+        int secondResult = firstNumber * secondNumber;
+        System.out.println(MessageFormat.format(("The product of {0} and {1} is {2}"), firstNumber, secondNumber, secondResult));
+
+        // Problem 9.6 - Print on the console the numbers from 1 to 1000. You may need to use loops.
+
+        for (int s = 1; s <= 1000; s++) {
+            System.out.println(s);
+
+        }
+    }
+}
