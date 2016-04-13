@@ -44,19 +44,18 @@ public class Main {
         Scanner scan = new Scanner(System.in);
         System.out.print("Please enter the value : ");
         double i = Double.parseDouble(scan.nextLine());
+        System.out.println("The SUM from your number is  : " + (i +10));
 
-        System.out.println("Your number is  : " + i);
-        System.out.println();
 
 
         // Problem 9.5 - Read from the console two numbers. Print on the console their product (e.g. Read “4” and “20”, Print “80”)
         Scanner in = new Scanner(System.in);
-        int input = in.nextInt();
-        System.out.println("Sum is " + (input + 10));
-        int firstNumber = in.nextInt();
-        int secondNumber = in.nextInt();
-        int secondResult = firstNumber * secondNumber;
-        System.out.println(MessageFormat.format(("The product of {0} and {1} is {2}"), firstNumber, secondNumber, secondResult));
+        System.out.print("Please enter the first value : ");
+        int a = in.nextInt();
+        System.out.print("Please enter the second value : ");
+        int b = in.nextInt();
+        int c = a * b;
+        System.out.println(MessageFormat.format(("The product of {0} and {1} is {2}"), a, b, c));
 
         // Problem 9.6 - Print on the console the numbers from 1 to 1000. You may need to use loops.
 
